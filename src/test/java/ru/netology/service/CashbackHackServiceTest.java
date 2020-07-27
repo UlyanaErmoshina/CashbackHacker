@@ -5,7 +5,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class CashbackHackServiceTest {
     @Test
-    void shouldCalculateHowMuchBuy() {
+    public void shouldCalculateHowMuchBuy() {
         CashbackHackService bonusService= new CashbackHackService();
         int amount = 900;
         int actual = bonusService.remain(amount);
@@ -14,7 +14,7 @@ public class CashbackHackServiceTest {
 
     }
     @Test
-    void shouldCalculateHowMuchBuy2() {
+    public void shouldCalculateHowMuchBuy2() {
         CashbackHackService bonusService= new CashbackHackService();
         int amount = 0;
         int actual = bonusService.remain(amount);
